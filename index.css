@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #F6C46B;
+  --secondary-color: #C97E3D;
+  --soft-color: #F2E3C6;
+  --info-color: #17a2b8;
+  --green-color: #7A9D54;
+  --white-color: #ffffff;
+  --lightgray-color: #EEEDE9;
+  --black-color: #000000;
+  --hoverButton-white-color: #8a8a8a;
+  --hoverButton-primary-color: #E0A343;
+  --font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--soft-color);
+}
+.header {
+  background-color: var(--soft-color);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerTitleImg{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerTitleImg img{
+  width: 60px;
+  height: 60px;
+  margin: 0 0 0 10px;
+  border-radius: 50%;
+}
+
+.headerButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}
+
+.headerButtons button {
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contactButton{
+  display: none;
+}
+
+.saleButton {
+  background-color: var(--primary-color);
+  color: var(--black-color);
+}
+
+.saleButton:hover {
+  background-color: var(--hoverButton-primary-color);
+  color: var(--white-color);
+}
+
+.contentSale {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 10px;
+}
+
+.contentSale button{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.imagePrimary img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.infoText {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border-radius: 10px;
+}
+
+.infoImg img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+
+@media screen and (min-width: 768px){
+  .saleContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  .imagePrimary{
+    width: 100%;
+  }
+
+  .contactButton {
+    display: inline-block;
+    background-color: var(--lightgray-color);
+    color: var(--black-color);
+  }
+  .contactButton:hover {
+    background-color: var(--hoverButton-white-color);
+    color: var(--white-color);
+  }
+
+  .infoContainer{
+    display: flex;
+    flex-direction: row;
+    text-align: inherit;
+    align-items: center;
+    gap: 20px;
+  }
+  .infoImg{
+    width: 225%;
+  }
+}
