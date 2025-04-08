@@ -89,6 +89,8 @@ body {
   width: 100%;
   height: 300px;
   border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit:fill;
 }
 
 .infoText {
@@ -106,6 +108,8 @@ body {
   width: 100%;
   height: 300px;
   border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: fill;
 }
 
 
