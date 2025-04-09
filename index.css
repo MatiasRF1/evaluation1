@@ -155,8 +155,12 @@ body {
   width: 100%;
   box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
+
+.profile h2{
+  margin: 0;
+}
 .profile p{
-  margin: 10px 10px 30px 10px;
+  margin: 0 10px 20px 10px;
 }
 .profile img{
   width: 150px;
