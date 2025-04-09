@@ -2,26 +2,40 @@
   --primary-color: #F6C46B;
   --secondary-color: #C97E3D;
   --soft-color: #F2E3C6;
+  --header-color: linear-gradient(90deg, var(--primary-color), var(--secondary-color));;
   --info-color: #17a2b8;
   --green-color: #7A9D54;
   --white-color: #ffffff;
   --lightgray-color: #EEEDE9;
   --black-color: #000000;
   --hoverButton-white-color: #8a8a8a;
-  --hoverButton-primary-color: #E0A343;
+  --hoverButton-primary-color: #a16400;
   --font-family: "Bebas Neue", sans-serif;
 }
 
 body {
+  margin:0;
+  padding: 0;
   font-family: var(--font-family);
   background-color: var(--soft-color);
 }
+
+.body{
+  margin: 0 10px 0 10px;
+}
+
 .header {
-  background-color: var(--soft-color);
-  padding: 10px;
+  background-color: var(--header-color);
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  background: var(--header-color);
+  box-shadow: 0 3px 6px rgb(153, 123, 0);
+  margin-bottom: 20px;
+}
+
+.header button{
+  margin-right: 20px;
 }
 
 .headerTitleImg{
@@ -50,39 +64,43 @@ body {
   margin-left: 10px;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
 
 .contactButton{
   display: none;
 }
 
-.saleButton {
+.infoTeamButton {
   background-color: var(--primary-color);
   color: var(--black-color);
 }
 
-.saleButton:hover {
+.infoTeamButton:hover {
   background-color: var(--hoverButton-primary-color);
   color: var(--white-color);
+  
 }
 
-.contentSale {
+.contentInfoTeam {
   display: flex;
   flex-direction: column;
   text-align: justify;
   padding: 20px;
-  margin-bottom: 10px;
   background-color: var(--secondary-color);
   color: var(--white-color);
   border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
 
-.contentSale button{
+.contentInfoTeam button{
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   width: 200px;
+  box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
 
 .imagePrimary img{
@@ -90,7 +108,7 @@ body {
   height: 300px;
   border-radius: 10px;
   margin-bottom: 10px;
-  object-fit:fill;
+  box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
 
 .infoText {
@@ -98,30 +116,79 @@ body {
   flex-direction: column;
   text-align: justify;
   padding: 20px;
-  margin-bottom: 10px;
   background-color: var(--green-color);
   color: var(--white-color);
   border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
 
 .infoImg img{
   width: 100%;
   height: 300px;
   border-radius: 10px;
-  margin-bottom: 10px;
   object-fit: fill;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
 
+.beekeepersTitle{
+  text-align: center;
+}
+
+.beekeepers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile {
+  background-color: var(--white-color);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
+}
+.profile p{
+  margin: 10px 10px 30px 10px;
+}
+.profile img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+  box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
+}
 
 @media screen and (min-width: 768px){
-  .saleContainer{
+  .body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contentInfoTeam{
+    box-shadow: none;
+  }
+  .infoTeamContainer{
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
     margin-bottom: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    width: 80%;
+    box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
   }
   .imagePrimary{
     width: 100%;
+    margin: 10px;
   }
 
   .contactButton {
@@ -137,11 +204,40 @@ body {
   .infoContainer{
     display: flex;
     flex-direction: row;
-    text-align: inherit;
+    text-align: center;
     align-items: center;
     gap: 20px;
+    background-color: var(--green-color);
+    border-radius: 20px;
+    width: 80%;
+    box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
   }
+
+  .infoText{
+    box-shadow: none;
+  }
+
   .infoImg{
     width: 225%;
+    margin: 10px;
   }
+
+  .beekeepers{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 0 20px 0;
+    width: 80%;
+  }
+
+  .profile {
+    background-color: var(--white-color);
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 500px;
+    width: auto;
+    box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
+  }
+
 }
