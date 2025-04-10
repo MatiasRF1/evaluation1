@@ -80,6 +80,14 @@ a.developerButton:hover {
   align-items: center;
 }
 
+.headerTitleImg a{
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .headerTitleImg img{
   width: 60px;
   height: 60px;
