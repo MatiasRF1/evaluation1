@@ -198,7 +198,7 @@ a.developerButton:hover {
   margin: 0;
 }
 
-.profileContact h2,
+.profileContact p,
 .profiledeveloper p,
 .profile p{
   margin: 0 10px 20px 10px;
@@ -390,7 +390,7 @@ a.developerButton:hover {
     margin: 0 0 20px 0;
     width: 80%;
   }
-  
+
   .profileContact{
     background-color: var(--white-color);
     border-radius: 20px;
