@@ -50,6 +50,7 @@ a {
 a.contactButton {
   display: none;
 }
+
 a.infoTeamButton,
 a.developerButton {
   display: inline-block;
@@ -62,16 +63,14 @@ a.developerButton {
   font-family: var(--font-family);
   box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
   margin: 10px;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 a.infoTeamButton:hover,
 a.developerButton:hover {
   background-color: var(--hoverButton-primary-color);
   color: var(--white-color);
-}
-
-.header button{
-  margin-right: 20px;
+  transform: scale(1.05);
 }
 
 .headerTitleImg{
@@ -102,14 +101,6 @@ a.developerButton:hover {
   margin-left: auto;
 }
 
-.headerButtons button {
-  border: none;
-  padding: 10px 20px;
-  margin-left: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
-}
 
 
 .infoTeamButton {
@@ -132,15 +123,6 @@ a.developerButton:hover {
   color: var(--white-color);
   border-radius: 10px;
   margin-bottom: 10px;
-  box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
-}
-
-.contentInfoTeam button{
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 200px;
   box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
 
@@ -254,6 +236,11 @@ a.developerButton:hover {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.socialIcons img:hover {
+  transform: scale(1.2);
 }
 
 .developerButton {
@@ -375,10 +362,13 @@ a.developerButton:hover {
     font-family: var(--font-family);
     box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
     margin: 10px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
   }
+
   .contactButton:hover {
     background-color: var(--hoverButton-white-color);
     color: var(--white-color);
+    transform: scale(1.05);
   }
 
   .infoContainer{
