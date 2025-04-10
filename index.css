@@ -2,7 +2,7 @@
   --primary-color: #F6C46B;
   --secondary-color: #C97E3D;
   --soft-color: #F2E3C6;
-  --header-color: linear-gradient(90deg, var(--primary-color), var(--secondary-color));;
+  --header-color: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   --info-color: #17a2b8;
   --green-color: #7A9D54;
   --white-color: #ffffff;
@@ -191,11 +191,11 @@ a.developerButton:hover {
   box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
 
-.profiledeveloper,
+.profiledeveloper h2,
 .profile h2{
   margin: 0;
 }
-.profiledeveloper,
+.profiledeveloper p,
 .profile p{
   margin: 0 10px 20px 10px;
 }
