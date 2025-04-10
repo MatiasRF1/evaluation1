@@ -135,6 +135,7 @@ a.developerButton:hover {
   width: 200px;
   box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
+
 .imagePrimaryAbout img,
 .imagePrimary img{
   width: 100%;
@@ -189,6 +190,7 @@ a.developerButton:hover {
   width: 100%;
   box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
+
 .profiledeveloper,
 .profile h2{
   margin: 0;
@@ -289,7 +291,6 @@ a.developerButton:hover {
   border-bottom: none;
   border-radius: 0 0 20px 20px;
 }
-
 
 .profile-table .github a{
   text-decoration:underline;
