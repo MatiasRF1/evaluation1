@@ -178,6 +178,7 @@ a.developerButton:hover {
   margin-bottom: 20px;
 }
 
+.profileContact,
 .profiledeveloper,
 .profile {
   background-color: var(--white-color);
@@ -191,14 +192,19 @@ a.developerButton:hover {
   box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
 }
 
+.profileContact h2,
 .profiledeveloper h2,
 .profile h2{
   margin: 0;
 }
+
+.profileContact h2,
 .profiledeveloper p,
 .profile p{
   margin: 0 10px 20px 10px;
 }
+
+.profileContact img,
 .profiledeveloper img,
 .profile img{
   width: 150px;
@@ -384,7 +390,16 @@ a.developerButton:hover {
     margin: 0 0 20px 0;
     width: 80%;
   }
-
+  
+  .profileContact{
+    background-color: var(--white-color);
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 500px;
+    width: 33%;
+    box-shadow: 0 3px 3px rgba(70, 70, 70, 0.35);
+  }
   .profile {
     background-color: var(--white-color);
     border-radius: 20px;
